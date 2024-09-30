@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgb(43, 119, 217);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.links a:hover {
+    color: #ccc;
+}
+
+main {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px; 
+}
+
+fieldset {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+legend {
+    font-size: 1.5rem;
+    color: rgb(43, 119, 217);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+}
+
+form input:focus {
+    border-color: rgb(43, 119, 217);
+}
+
+form input[type="submit"] {
+    background-color: rgb(43, 119, 217);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #1d57a6;
+}
+
+footer {
+    background-color: rgb(43, 119, 217);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .formulario {
+        padding: 20px;
+    }
+
+    fieldset {
+        padding: 20px;
+    }
+
+    form input {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    form input {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    legend {
+        font-size: 1.3rem;
+    }
+
+    form label {
+        font-size: 0.9rem;
+    }
+}

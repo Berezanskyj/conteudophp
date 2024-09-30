@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(43, 119, 217);
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #ccc;
+}
+
+.main-text {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.main-text h1 {
+    font-size: 2.5rem;
+    color: rgb(43, 119, 217);
+}
+
+.grid-cursos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.curso {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.curso:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.imagem-curso {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.curso h2 {
+    font-size: 1.5rem;
+    color: rgb(43, 119, 217);
+    margin-bottom: 10px;
+}
+
+.curso p {
+    font-size: 1rem;
+    color: #555;
+}
+
+footer {
+    background-color: rgb(43, 119, 217);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer h1 {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .main-text h1 {
+        font-size: 2rem;
+    }
+
+    .curso h2 {
+        font-size: 1.3rem;
+    }
+
+    .curso p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .curso h2 {
+        font-size: 1.2rem;
+    }
+
+    .curso p {
+        font-size: 0.8rem;
+    }
+}

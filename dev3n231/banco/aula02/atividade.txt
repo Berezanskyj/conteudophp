@@ -1,0 +1,25 @@
+Faça um programa que receba em um formulário os dados cadastrais de um cliente e grave no banco da dados. Ao final mostre uma mensagem de "Cadastro realizado com sucesso!"
+- nome
+- sobrenome
+- endereço
+- número
+- complemento
+- bairro
+- cidade
+- estado
+- data de nascimento
+- cpf
+- RG
+- telefone
+- email
+
+1 - Criar o banco de dados
+2 - Criar a página do formulário
+3 - Criar a página de conexão ao banco de dados
+4 - Criar a página para realizar o cadastro no banco
+5 - Criar a Home, Cursos, Cadastro e Localização.
+6 - Trabalhar Responsividade.
+
+
+
+
