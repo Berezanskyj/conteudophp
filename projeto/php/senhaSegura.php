@@ -4,11 +4,17 @@ $senha = '1231';
 $senhaMD5 = md5($senha);
 $senhaSHA = sha1($senha);
 
-$senhaSegura1 = password_hash($senha, PASSWORD_DEFAULT);
-$senhaSegura2 = password_hash($senha, PASSWORD_DEFAULT);
-$senhaSegura3 = password_hash($senha, PASSWORD_DEFAULT);
+$senhaSegura1 = password_hash($senha, PASSWORD_DEFAULT, ['cost'=>10]);
+$senhaSegura2 = password_hash($senha, PASSWORD_DEFAULT, ['cost'=>10]);
+$senhaSegura3 = password_hash($senha, PASSWORD_DEFAULT, ['cost'=>10]);
 
 $senhaCorreta = password_verify('1231', $senhaSegura1);
+
+if($senhaCorreta == $senha){
+    echo "OK";
+} else{
+    echo "NOK";
+}
 
 var_dump(($senhaCorreta));
 
